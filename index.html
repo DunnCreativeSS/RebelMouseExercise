@@ -1,5 +1,7 @@
 <html>
 <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 .header {
 	height: 16.7539267%;
@@ -13,7 +15,7 @@
 .menu {
 	margin: 0;
 	position: absolute;
-	top: 20%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	white-space: nowrap;
@@ -29,7 +31,11 @@
 	color: white;
 	font-size: 10px;
 	top: -10px;
+	font-weight: bold;
 	position: relative;
+}
+.top-menu-item:hover {
+	color:red;
 }
 .menu-right-space {
 	width: 17.816092%;
@@ -45,6 +51,36 @@
 }
 .person {
 	height: 30;
+}
+.middle-menu-item {
+	margin-top: 1.8363202%;
+	margin-left: 0.8363202%;
+	text-decoration-line: underline;
+	text-decoration-color: #5c975f;
+	color: white;
+	font-size: 10px;
+}
+.middle-menu-item:hover {
+	color: red;
+}
+.bottom-menu {
+	margin-top: 1.8363202%;
+}
+.vai {
+	width:100%;
+	position: relative;
+}
+.submit {
+    background:#c4497c;
+    color: white;
+    border: none;
+    width:20%;
+}
+.input-container {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	position: relative;
+	background:white;
 }
 </style>
 </head>
@@ -63,11 +99,25 @@
 				<span class='top-menu-item'>Promocoes</span>
 				<span class='menu-right-space'></span>
 				<span class='top-menu-right'>
-					<span class='faleconosco top-menu-item'>Fale Conosco</span>
+					<span class='faleconosco top-menu-item'>Fale conosco</span>
 					<img src='person.png' class='person'/>
 					<span class='top-menu-item'>Entrar</span>
 				</span>
 			</span>
+			<div>
+				<span class='middle-menu-item'>Hoteis</span>
+				<span class='middle-menu-item'>Pacotes</span>
+				<span class='middle-menu-item'>Experiencias</span>
+				<span class='middle-menu-item'>Onibus</span>
+			</div>
+			<div class='bottom-menu'>
+				<span class='input-container'>
+				    <i class="fa fa-search icon"></i>
+					<input type='text' class='vai' placeholder="Vai pra onde?"/>
+				
+					<input type='button' class='submit' value='Pesquisar'/>
+				</span>
+			</div>
 		</div>
 
 	</div>
