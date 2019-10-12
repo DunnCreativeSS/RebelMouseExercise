@@ -89,7 +89,24 @@
 	position: relative;
 	background:white;
 }
+.image {
+	height: 75.9162304%;
+	position: relative;
+}
+
 </style>
+<script>
+function image(){
+	which++;
+	if (which > 4){
+		which = 1;
+	}
+	var i = which;
+	document.getElementById("image").src=which+'.png';
+
+}
+var which = 1;
+</script>
 </head>
 <body>
 	<div class='header'>
@@ -132,5 +149,9 @@
 		<img src='band.png' class='band-png'/>
 		<span style='margin-top:-5%;'>NOVIDADE! HURB CASH, SUA VIAGEM PRE-PAGA. <span style='color:yellow;'>CLIQUE AQUI</span> E SAIBA MAIS.</span>
 	</div>
+	<span class='image' >
+		<img src='1.png' onclick='image()' id='image' />
+
+	</span>
 </body>
 </html>
